@@ -20,7 +20,7 @@ function Navbar() {
           {links.map(({ name, path }, index) => {
             return (
               <li key={index}>
-                <NavLink to={path} className= {({isActive}) => isActive ? 'active-nav' : ''}  onClick={() => setNavShowing(prev => !prev)}>
+                <NavLink to={path} className= {({isActive}) => isActive ? 'active-nav' : ''}  onClick={() => setNavShowing(prev => !prev)} end>
                   {name}
                 </NavLink>
               </li>
